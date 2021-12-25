@@ -14,27 +14,31 @@
 ### Installation
 To install this library, do the following
 
+
 #### Step 1 - Download or CLone Library
 
 First thing you’ll need download or clone current repository.
 
-![screen shots](screenshots/1.jpg)
+<img src="screenshots/1.jpg" width="400" >
 
 
-#### Step 1 - Import Library as Module
+
+#### Step 2 - Import Library as Module
 
 Then you should import onesignal as module in Android Studio.
 
-![screen shots](screenshots/2.jpg)
+<img src="screenshots/2.jpg" width="500" >
 
-![screen shots](screenshots/3.jpg)
+<img src="screenshots/3.jpg" width="600" >
+
+
 
 #### Step 3 - Add one signal as dependency
 
 Add the dependency to your app/build.gradle file:
 
 ```
-implementation project(':onesignal')
+implementation project(path: ':onesignal')
 ```
 
 See OneSignal's [Android Native SDK Setup Guide](https://documentation.onesignal.com/docs/android-sdk-setup) for next steps and more documentation.
