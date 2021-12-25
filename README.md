@@ -11,21 +11,46 @@
 
 <p align="center"><img src="https://app.onesignal.com/images/android_notification_image.gif" width="400" alt="Android Notification"></p>
 
-#### Installation
-See OneSignal's [Android Native SDK Setup Guide](https://documentation.onesignal.com/docs/android-sdk-setup) for documentation.
+### Installation
+To install this library, do the following
 
-#### API
+#### Step 1 - Download or CLone Library
+
+First thing you’ll need download or clone current repository.
+
+![screen shots](screenshots/1.jpg)
+
+
+#### Step 1 - Import Library as Module
+
+Then you should import onesignal as module in Android Studio.
+
+![screen shots](screenshots/2.jpg)
+
+![screen shots](screenshots/3.jpg)
+
+#### Step 3 - Add one signal as dependency
+
+Add the dependency to your app/build.gradle file:
+
+```
+implementation project(':onesignal')
+```
+
+See OneSignal's [Android Native SDK Setup Guide](https://documentation.onesignal.com/docs/android-sdk-setup) for next steps and more documentation.
+
+### API
 See OneSignal's [Android Native SDK API](https://documentation.onesignal.com/docs/android-native-sdk) page for a list of all available methods.
 
-#### Change Log
+### Change Log
 See this repository's [release tags](https://github.com/OneSignal/OneSignal-Android-SDK/releases) for a complete change log of every released version.
 
-#### Support
+### Support
 Please visit this repository's [Github issue tracker](https://github.com/OneSignal/OneSignal-Android-SDK/issues) for feature requests and bug reports related specifically to the SDK.
 For account issues and support please contact OneSignal support from the [OneSignal.com](https://onesignal.com) dashboard.
 
-#### Demo Project
+### Demo Project
 To make things easier, we have published demo projects in the `/Examples` folder of this repository.
 
-#### Supports:
+### Supports:
 * Tested from Android 4.1.0 (API level 16) to Android 12 (31)

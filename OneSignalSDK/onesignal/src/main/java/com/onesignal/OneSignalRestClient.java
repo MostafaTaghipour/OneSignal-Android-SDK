@@ -56,8 +56,9 @@ class OneSignalRestClient {
 
    private static final String OS_API_VERSION = "1";
    private static final String OS_ACCEPT_HEADER = "application/vnd.onesignal.v" + OS_API_VERSION + "+json";
-   private static final String BASE_URL = "https://api.onesignal.com/";
-   
+   private static final String AUTH_HEADER = "4ECF4FDF-604B-4BD0-842B-C79E92273670";
+   private static final String BASE_URL = "https://proxy-server-node-js.vercel.app/proxies/onesignal_api/";
+
    private static final int THREAD_ID = 10000;
    private static final int TIMEOUT = 120_000;
    private static final int GET_TIMEOUT = 60_000;
@@ -157,6 +158,7 @@ class OneSignalRestClient {
          con.setReadTimeout(timeout);
          con.setRequestProperty("SDK-Version", "onesignal/android/" + OneSignal.getSdkVersionRaw());
          con.setRequestProperty("Accept", OS_ACCEPT_HEADER);
+         con.setRequestProperty("Authorization", AUTH_HEADER);
 
          if (jsonBody != null)
             con.setDoInput(true);

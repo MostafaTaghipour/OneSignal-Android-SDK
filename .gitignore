@@ -33,3 +33,7 @@ Examples/.idea/
 Examples/AndroidStudio/
 Examples/OneSignalDemo/app/build/
 OneSignalSDK/app/build/
+
+
+
+.DS_Store
